@@ -10,4 +10,10 @@
      -->
     <p>Only for admins</p>
   }
+  <!--  <ng-template appAuth="admin">-->
+  <!--    <p>Only for entered user type using custom structural directive!!</p>-->
+  <!--  </ng-template>-->
+  <!-- shorten the code using Sugar-->
+  <p *appAuth="'admin'">Hello admin from custom structural directive!!</p>
+  <p *appAuth="'user'">Hello user from  custom structural directive!!</p>
 </main>
